@@ -1,5 +1,4 @@
 # Node
-node_modules/
 npm-debug.log
 yarn-error.log
 
@@ -11,7 +10,6 @@ logs
 *.log
 
 # Docker
-Dockerfile
 docker-compose.yml
 .dockerignore
 
