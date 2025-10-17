@@ -68,7 +68,7 @@ app.post("/login", async (req, res) => {
 });
 
 // ✅ Iniciar servidor
-const PORT = process.env.PORT || 8084;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Servidor escuchando en puerto ${PORT}`);
 });
