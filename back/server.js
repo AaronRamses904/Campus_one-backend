@@ -10,7 +10,9 @@ dotenv.config();
 const app = express();
 
 // ✅ Middlewares
-app.use(cors());
+app.use(cors({
+  origin: "https://campus-one-frontend-3dob.vercel.app/" // <- reemplaza con tu URL real de Vercel
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // para formularios por si acaso
 
@@ -70,6 +72,4 @@ const PORT = process.env.PORT || 8084;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Servidor escuchando en puerto ${PORT}`);
 });
-
-
 
