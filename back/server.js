@@ -11,7 +11,7 @@ const app = express();
 
 // ✅ Middlewares
 app.use(cors({
-  origin: "https://campus-one-frontend-3dob.vercel.app/" // <- reemplaza con tu URL real de Vercel
+  origin: "https://campus-one-frontend-3dob.vercel.app/registro" // <- reemplaza con tu URL real de Vercel
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // para formularios por si acaso
